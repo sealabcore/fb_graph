@@ -28,7 +28,7 @@ module FbGraph
     extend Searchable
 
     @@attributes = {
-      :raw => [:name, :username, :category, :link, :talking_about_count, :perms, :is_published, :can_post],
+      :raw => [:name, :username, :category, :link, :talking_about_count, :perms, :is_published, :can_post, :likes],
       :custom => [:cover, :like_count]
     }
 

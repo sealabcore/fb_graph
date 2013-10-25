@@ -40,6 +40,7 @@ module FbGraph
         self.send :"#{key}=", attributes[key]
       end
       @link ||= "https://www.facebook.com/#{username || identifier}"
+      pp attributes
       @like_count = attributes[:likes] || attributes[:fan_count]
       @cover = if (cover = attributes[:cover])
         Cover.new cover[:cover_id], cover
